@@ -39,7 +39,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + ageMen + " то ему нужно ходить на работу.");
         }
         else {        // Условный оператор else выполняется в случае если возраст меньше двух
-            System.out.println("Не корректный возраст.");
+            System.out.println("Возраст.не позволяет определить учреждение!");
         }
 
         System.out.println("\nTask 5\n");    // Пятое задание
@@ -54,13 +54,13 @@ public class Main {
         }
 
         System.out.println("\nTask 6\n");    // Шестое задание
-        int seatPlace = 60;  // Присвоение занятых сидящих мест
-        int stedingPlace = 61;  // Присвоение занятых стоящих мест
+        int seatPlace = 59;  // Присвоение занятых сидящих мест
+        int stedingPlace = 39;  // Присвоение занятых стоящих мест
         int totalSeatPlace = 60 - seatPlace; // Присвоение (расчет) свободных сидящих мест
-        int totalStedingPlase = 62 - stedingPlace; // Присвоение (расчет) свободных стоящих мест
+        int totalStedingPlase = 42 - stedingPlace; // Присвоение (расчет) свободных стоящих мест
         if (seatPlace < 60 && stedingPlace < 62) {  // Условный оператор if выполняется в случае если есть сидящие и стоящие свододные места
             System.out.println("В вагоне есть " + totalSeatPlace + " сидящих мест и " + totalStedingPlase + " стоящих мест.");
-        } else if (seatPlace >= 60 && stedingPlace < 62) { // Условный оператор else if выполняется в случае если есть только стоящие свододные места
+        } else if (seatPlace >= 60 && stedingPlace < 42) { // Условный оператор else if выполняется в случае если есть только стоящие свододные места
             System.out.println("В вагоне нет сидящих мест, осталось толко " + totalStedingPlase + " стоящих мест.");
         } else if (seatPlace < 60 && stedingPlace >= 62) { // Условный оператор else if выполняется в случае если есть только сидящие свододные места
             System.out.println("В вагоне есть " + totalSeatPlace + " сидящих мест, стоящих мест нет");
